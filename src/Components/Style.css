@@ -1,0 +1,372 @@
+
+
+
+h1 {
+
+    font-size: 45;
+    font-family: bodoni
+}
+/*
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.odd{
+    color: black;
+}
+
+.even{
+    color:gray;
+} */
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background-color: black;
+  padding: 10px 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  font-family: 'bodoni_body';
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.nav-link, .nav-page {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    pointer-events: auto;
+}
+
+.nav-link:hover, .nav-page:hover{
+    background-color: #131212;
+}
+
+
+/* Project Box Styling */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+  height: 800px;
+  background-color: #000000;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  padding: 50px 130px 50px 130px;
+  margin-bottom: 40px;
+  overflow: hidden; /* Prevents overflow during animation */
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Project Image */
+.project-img {
+  width: 300px;
+  height: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Text Container */
+.text {
+  flex: 1;
+  font-size: 20px;
+}
+
+/* Button Row */
+.button-row {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.language-button {
+  padding: 10px 15px;
+  background-color: #1a1919;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Apply Different Gradient Colors */
+.language-button:nth-of-type(1) {
+  background: #cc6242; /* Red-Orange Gradient */
+}
+
+.language-button:nth-of-type(2) {
+  background: #cf9006; /* Orange-Yellow Gradient */
+}
+
+.language-button:nth-of-type(3) {
+  background: #c7a355; /* Yellow-Orange Gradient */
+  color: black; /* Text contrast for better readability */
+}
+
+/* Hover Effect: Slight Scale and Gradient Shift */
+.language-button:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  background-position: right; /* Animate the gradient shift */
+}
+
+/* Section Divider */
+hr {
+  margin: 15px 0;
+  border: none;
+  height: 2px;
+  background-color: #ddd;
+}
+
+
+
+/*Parallax effect*/
+.parallax {
+    background-image: url('images/galaxy.jpg');
+    height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.background {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+/*animation*/
+@keyframes fade-inout {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.parallax-text {
+    animation: fade-inout 3s;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: bodoni;
+
+}
+
+/* About Section Styling */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: #0a0a0a;
+    color: white;
+    height: 450px;
+  }
+  
+  .about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    max-width: 80%;
+  }
+  
+  /* Text on the Left */
+  .about-text {
+    flex: 1;
+    padding-left: 40px;
+  }
+  
+  .about-text h1 {
+    margin-bottom: 10px;
+    font-family: 'bodoni_body', serif;
+    font-size: 2.5rem;
+
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+
+  }
+  
+
+  .about-image img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50% / 35%; /* Creates the oval frame */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .about-image img:hover {
+    transform: scale(1.05);
+  }
+
+  .projimage {
+    position: relative;
+    display: flex;           /* Changed to flex for easier centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    width: 350px;
+    height: 400px;
+}
+
+.projimage img {
+    width: 92.3%;
+    height: 92.5%;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    position: relative;      /* Changed from 'behind' */
+    z-index: 1;             /* Ensure image is behind the frame */
+}
+
+.projimage::before {
+    content: "";
+    position: absolute;
+    bottom: 2;
+    right: 3;
+    width: 120%;
+    height: 120%;
+    background: url('./images/ImageFrame.png') no-repeat center/contain;
+    pointer-events: none;
+    z-index: 2;             /* Ensure frame is in front */
+}
+
+/* Contact Section Styling */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background: linear-gradient(135deg, #000000, #1f1724, #000000);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .icon-row {
+    display: flex;
+    gap: 40px;
+  }
+  
+  /* Contact Icons - Ensuring Same Size and Aspect Ratio */
+  .contact-icon img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain; /* Maintain aspect ratio within the set dimensions */
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Space between title and icons */
+  }
+
+  .contact-title {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: 'bodoni_body', sans-serif;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .contact-icon img:hover {
+    transform: scale(1.2); /* Slightly smaller zoom for a more refined look */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+  
+  
+  /* Optional: Smooth transition effect when scrolling to the section */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+
+
+#projects {
+    background-color: #080808;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-content: center;
+    max-width: 100vw;
+    min-height: 25vw;
+}
+
+#experience {
+    background-color: #1d1c1c;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-content: center;
+    max-width: 100vw;
+    min-height: 25vw;
+}
+
+
+.transition{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 9999;
+    transform: translateX(100%);
+    transition: transform 0.6s ease-in-out;
+}
+
+.page-transition {
+    transform: translateX(0);
+}
+
+.resume-container {
+  margin-top: 60px; /* Add margin to prevent overlap with fixed navbar */
+  display: flex;
+  justify-content: center; /* Center the image */
+}
+
+/* Additional styling for responsiveness */
+img {
+  max-width: 100%; /* Ensure it is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.FuckYou {
+  padding-left: 450px;
+  justify-content: center;
+  align-items: center; /* use for vertical centering */
+  height: 700px;
+}
