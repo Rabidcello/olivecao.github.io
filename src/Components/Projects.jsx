@@ -31,11 +31,11 @@ const Projects = () => {
       />
 
       <Section
-        title="Housing Rates Correlation Study"
+        title="Housing Rates Correlation Analysis"
         image={House}
         altText="House"
         description="A report analyzing factors for increasing property values in the city of Boston. Based on a dataset found on Kaggle, a formal regression analysis was done which included hypothesis testing, fitting of the data, ANOVA tests all done through R as well as in-depth collection of research."
-        languages={['R', 'Pandas', 'Numpy']}
+        languages={['R', 'PowerBI', 'Pandas']}
       />
 
       <Section
@@ -46,7 +46,26 @@ const Projects = () => {
         languages={['Java', 'Google Calendar API', 'Firebase API']}
         reverse
       />
+
+      <Section
+        title="Recipe Finder App"
+        image={House}
+        altText="House"
+        description="A report analyzing factors for increasing property values in the city of Boston. Based on a dataset found on Kaggle, a formal regression analysis was done which included hypothesis testing, fitting of the data, ANOVA tests all done through R as well as in-depth collection of research."
+        languages={['React', 'Django', 'BeautifulSoup']}
+      />
+
+
+      <Section
+        title="Distracto-Blocker"
+        image={Fitness}
+        altText="Fitness"
+        description="Ever wanted to start going to the gym, but don’t know how to plan a workout? No worries! The Fitness app allows you to search up a database of the most efficient exercises for each muscle, allowing you to quickly build your dream workout. Additionally, it automatically adds the workout to your Google Calendar so you have no excuse to slack off!"
+        languages={['PowerBI', 'React', 'MitmProxy']}
+        reverse
+      />
     </div>
+    
   );
 };
 
