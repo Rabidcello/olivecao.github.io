@@ -35,7 +35,7 @@ const Projects = () => {
         image={House}
         altText="House"
         description="A report analyzing factors for increasing property values in the city of Boston. Based on a dataset found on Kaggle, a formal regression analysis was done which included hypothesis testing, fitting of the data, ANOVA tests all done through R as well as in-depth collection of research."
-        languages={['R', 'PowerBI', 'Pandas']}
+        languages={['R', 'NumPy', 'Pandas']}
       />
       
       <Section
