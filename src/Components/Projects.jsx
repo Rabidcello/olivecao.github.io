@@ -51,16 +51,16 @@ const Projects = () => {
         title="Recipe Finder App"
         image={House}
         altText="House"
-        description="A report analyzing factors for increasing property values in the city of Boston. Based on a dataset found on Kaggle, a formal regression analysis was done which included hypothesis testing, fitting of the data, ANOVA tests all done through R as well as in-depth collection of research."
+        description="You ever have a lot of items in your fridge and wonder what recipes you can make with them? RecipeFinder has you covered. Simply type in your leftover groceries one at a time, and look at a list of the best recipe matches around the web. "
         languages={['React', 'Django', 'BeautifulSoup']}
       />
 
 
       <Section
-        title="Distracto-Blocker"
+        title="Only the Good Bits"
         image={Fitness}
         altText="Fitness"
-        description="Ever wanted to start going to the gym, but don’t know how to plan a workout? No worries! The Fitness app allows you to search up a database of the most efficient exercises for each muscle, allowing you to quickly build your dream workout. Additionally, it automatically adds the workout to your Google Calendar so you have no excuse to slack off!"
+        description="Allows you to selectively block which categories of YouTube videos you don’t want to be able to access. Gain insights into your habits and track your progress through the PowerBI dashboard! Now you can watch useful lecture videos without worrying about distractions from short-form brain-rot!"
         languages={['PowerBI', 'React', 'MitmProxy']}
         reverse
       />
