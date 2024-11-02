@@ -3,9 +3,11 @@ import { motion } from 'framer-motion';
 import './Style.css';
 import Bug from './images/Bugged out.png';
 import Truck from './images/Trucks.jpg';
-import House from './images/house.jpg';
-import Fitness from './images/fitness.jpeg';
+import House from './images/Stats.png';
+import Fitness from './images/gym.avif';
 import Frame from './images/ImageFrame.png'
+import Pie from './images/pie.webp'
+import UTube from './images/YouTubby.png'
 
 const Projects = () => {
   useEffect(() => {
@@ -14,11 +16,35 @@ const Projects = () => {
   return (
     <div id="page2">
       <Section
+        title="Recipe Finder App"
+        image={Pie}
+        altText="House"
+        description="You ever have a lot of items in your fridge and wonder what recipes you can make with them? RecipeFinder has you covered. Full stack app that scraps the web to find you your next make-able recipe. Saves your favorite ones!"
+        languages={['React', 'Django', 'BeautifulSoup']}
+      />
+      <Section
+        title="Only the Good Bits"
+        image={UTube}
+        altText="Productivity"
+        description="Allows you to selectively block which categories of YouTube videos you don’t want to be able to access. Gain insights into your habits and track your progress through the PowerBI dashboard! Now you can watch useful lecture videos without worrying about distractions from short-form brain-rot!"
+        languages={['PowerBI', 'React', 'MitmProxy']}
+        reverse
+      />
+      <Section
+        title="Housing Rates Correlation Analysis"
+        image={House}
+        altText="House"
+        description="A report analyzing factors for increasing property values in the city of Boston. Based on a dataset found on Kaggle, a formal regression analysis was done which included hypothesis testing, fitting of the data, ANOVA tests all done through R as well as in-depth collection of research."
+        languages={['R', 'PowerBI', 'Pandas']}
+      />
+      
+      <Section
         title='"Bugged Out" Game'
         image={Bug}
         altText="Start of the game"
         description="A 2D platformer game about a programmer who gets sucked into his program and has to literally smash the monstrous bugs that plague his code with his trusty keyboard. I developed the game alongside a small group of other developers as a submission for the 2023 Brackey’s Game Jam. Won 3rd place for creativity out of 906 entries."
         languages={['C#', 'Unity']}
+        reverse
       />
 
       <Section
@@ -27,16 +53,9 @@ const Projects = () => {
         altText="Trucks"
         description="A machine learning model I trained, based on OpenAI API to help me automatically figure out if people on Twitter are talking about motorcycles or trucks. Trained on a 10,000+ row dataset with the classic 80-20 split with repeated fine-tuning, the model has an accuracy over 97%!"
         languages={['Python', 'OpenAI API', 'HuggingFace']}
-        reverse
       />
 
-      <Section
-        title="Housing Rates Correlation Analysis"
-        image={House}
-        altText="House"
-        description="A report analyzing factors for increasing property values in the city of Boston. Based on a dataset found on Kaggle, a formal regression analysis was done which included hypothesis testing, fitting of the data, ANOVA tests all done through R as well as in-depth collection of research."
-        languages={['R', 'PowerBI', 'Pandas']}
-      />
+
 
       <Section
         title="Google Calendar Fitness App"
@@ -47,23 +66,10 @@ const Projects = () => {
         reverse
       />
 
-      <Section
-        title="Recipe Finder App"
-        image={House}
-        altText="House"
-        description="You ever have a lot of items in your fridge and wonder what recipes you can make with them? RecipeFinder has you covered. Simply type in your leftover groceries one at a time, and look at a list of the best recipe matches around the web. "
-        languages={['React', 'Django', 'BeautifulSoup']}
-      />
 
 
-      <Section
-        title="Only the Good Bits"
-        image={Fitness}
-        altText="Fitness"
-        description="Allows you to selectively block which categories of YouTube videos you don’t want to be able to access. Gain insights into your habits and track your progress through the PowerBI dashboard! Now you can watch useful lecture videos without worrying about distractions from short-form brain-rot!"
-        languages={['PowerBI', 'React', 'MitmProxy']}
-        reverse
-      />
+
+
     </div>
     
   );
